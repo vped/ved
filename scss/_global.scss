@@ -4,6 +4,7 @@ body {
   @include body-font;
   padding-top: 54px;
   color: $gray-600;
+  background-color:white;
 }
 @media (min-width: 992px) {
   body {
@@ -65,16 +66,29 @@ p.lead {
       margin-right: 0;
     }
     &:hover {
-      background-color: $primary;
+      background-color: darkcyan;
     }
   }
 }
 
+#sideNav {
+          background-color: darkcyan !important;
+}
+
+.nav-item a{
+          color: $black !important;
+}
+
+.nav-item a.active {
+            color: $white !important;
+
+}
+
 .dev-icons {
-  font-size: 3rem;
-  .list-inline-item i {
+  .list-inline-item {
+    display:block;
     &:hover {
-      color: $primary;
+      color: darkcyan;
     }
   }
 }
